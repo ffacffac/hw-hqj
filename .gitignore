@@ -1,0 +1,10 @@
+.metadata/
+.recommenders/
+.sonarlint/
+bin/
+build/
+.idea/
+gen/
+obj/ 
+*.[gitignore]
+*.[iml]
