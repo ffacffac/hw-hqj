@@ -1,0 +1,1 @@
+adb=F:/ruanjian/hwEclipse/work/ADBDemo/platform-tools/,phone=sdcard/sdms/dbs,pc=F:/MyDB,copyToPhonePath=sdcard/
