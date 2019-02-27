@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_step"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#c7dddf"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_step_state"
+            style="@style/Step_Img_State"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_step_name"
+            style="@style/Step_Text"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="#FF090A0A"/>
+
+        <Button
+            android:id="@+id/btn_send_ground_affirm"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|right"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_btn_parmeter_save"
+            android:text="发送"
+            android:textColor="@color/commen_text_color"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_step_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_select_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_select_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_device_name"
+                    style="@style/Step_Text"
+                    android:text="L001#"/>
+
+                <TextView
+                    android:id="@+id/tv_device_km"
+                    style="@style/Step_Text"
+                    android:text="(K596+256)"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_device_ground_position"
+                style="@style/Step_Text"
+                android:text="接地位置：(K596+256)"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_device_state"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/v_step_ling"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/step_no_select"/>
+
+</LinearLayout>

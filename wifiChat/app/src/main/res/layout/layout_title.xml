@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/layout_title"
+             android:layout_width="match_parent"
+             android:layout_height="55dp"
+             android:background="@color/title_color"
+             android:paddingLeft="5dp"
+             android:paddingRight="5dp">
+
+    <TextView
+        android:id="@+id/tv_custom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/title_text"
+        android:textSize="@dimen/title_text"/>
+
+    <ImageView
+        android:id="@+id/iv_custom_title_left"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/btn_selector"
+        android:padding="4dp"
+        android:src="@drawable/bluetooth_disconnect"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_custom_title_right"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/btn_selector"
+        android:src="@drawable/icon_no_scan"
+        android:visibility="gone"/>
+
+</FrameLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    tools:context="szu.wifichat.android.activity.grounder.GroundLeandActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_step_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/corner_btn_bg"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"/>
+
+    <include
+        layout="@layout/layout_step_ground_leand"
+        android:visibility="gone"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/corner_btn_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_device_group_title"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#a7d5e7"
+            android:gravity="center"
+            android:textColor="#0e0e0e"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_device_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:paddingTop="5dp"/>
+    </LinearLayout>
+</LinearLayout>

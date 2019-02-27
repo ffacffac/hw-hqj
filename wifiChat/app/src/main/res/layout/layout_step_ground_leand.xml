@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_marginTop="5dp"
+              android:background="@drawable/corner_btn_bg"
+              android:orientation="vertical"
+              android:paddingBottom="10dp"
+              android:paddingTop="5dp">
+
+    <LinearLayout style="@style/Step_Parent">
+
+        <LinearLayout style="@style/Step_State_Text_Parent">
+
+            <ImageView
+                android:id="@+id/iv_step_scan_card_state"
+                style="@style/Step_Img_State"/>
+
+            <TextView
+                android:id="@+id/tv_step_scan_card_par"
+                style="@style/Step_Progress_Text"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Step_Text"
+            android:text="@string/step_scan_card"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Step_Parent">
+
+        <LinearLayout style="@style/Step_State_Text_Parent">
+
+            <ImageView
+                android:id="@+id/iv_step_hang_order_state"
+                style="@style/Step_Img_State"/>
+
+            <TextView
+                android:id="@+id/tv_step_hang_order_par"
+                style="@style/Step_Progress_Text"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Step_Text"
+            android:text="@string/step_hang_order"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Step_Parent">
+
+        <LinearLayout style="@style/Step_State_Text_Parent">
+
+            <ImageView
+                android:id="@+id/iv_step_hang_state"
+                style="@style/Step_Img_State"/>
+
+            <TextView
+                android:id="@+id/tv_step_hang_par"
+                style="@style/Step_Progress_Text"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Step_Text"
+            android:text="@string/step_hang"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Step_Parent">
+
+        <LinearLayout style="@style/Step_State_Text_Parent">
+
+            <ImageView
+                android:id="@+id/iv_step_dismantle_order_state"
+                style="@style/Step_Img_State"/>
+
+            <TextView
+                android:id="@+id/tv_step_dismantle_order_par"
+                style="@style/Step_Progress_Text"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Step_Text"
+            android:text="@string/step_dismantle_order"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Step_Parent">
+
+        <LinearLayout style="@style/Step_State_Text_Parent">
+
+            <ImageView
+                android:id="@+id/iv_step_dismantle_state"
+                style="@style/Step_Img_State"/>
+
+            <TextView
+                android:id="@+id/tv_step_dismantle_par"
+                style="@style/Step_Progress_Text"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Step_Text"
+            android:text="@string/step_dismantle"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="3dp"
+              android:background="@drawable/bg_device_selector"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_device_name_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/tv_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="L002#"
+                android:textColor="@color/commen_text_color"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/tv_device_km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:text="(k2210+638)"
+                android:textColor="@color/commen_text_color"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_device_ground_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:paddingBottom="3dp"
+            android:text="接挂位置：定位器、加强线"
+            android:textColor="@color/commen_text_color"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_device_state"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"/>
+</LinearLayout>

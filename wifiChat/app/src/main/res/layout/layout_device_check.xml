@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_margin="10dp"
+              android:background="@drawable/bg_dialog_normal"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height"
+        android:background="@drawable/bg_dialog_device_check_title"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dialog_ooperation_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dialog_title_text_size"/>
+
+        <ImageView
+            android:id="@+id/iv_device_check_photo"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_selector"
+            android:src="@drawable/icon_photo"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#ffd0d0d0"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_show_check_text"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:gravity="center"
+                android:textSize="28sp"/>
+
+            <ImageView
+                android:id="@+id/iv_device_check_image"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_way_refuse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/corner_btn_bg"
+                android:gravity="center"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="#ffd0d0d0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_dialog_normal_bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dialog_ooperation_positive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_btn_bg"
+            android:gravity="center"
+            android:text="确认发送"
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btn_dialog_ooperation_negative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_btn_cancel_bg"
+            android:gravity="center"
+            android:text="@string/txt_cancel"
+            android:textColor="#3E3E3E"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+</LinearLayout>

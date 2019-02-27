@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">设备检修管理系统</string>
+
+    <string name="aboutus_copyright">Copyright © 2014 WiFiChat By _Hill3、Zhuang</string>
+
+    <string name="btn_return">返    回</string>
+    <string name="btn_next">下一步</string>
+    <string name="dialog_tips">提 示</string>
+
+    <string name="welcome_btn_login">登 陆</string>
+
+    <string name="login_hint_nickname">输入您的昵称</string>
+    <string name="login_text_onlinestate">在线</string>
+    <string name="login_text_birthday">出生日期</string>
+    <string name="login_text_age">岁</string>
+    <string name="login_text_birthdaytips">提醒：您的出生日期不会出现在个人资料中。</string>
+    <string name="login_text_selectsex">选择性别</string>
+    <string name="login_text_male">男</string>
+    <string name="login_text_female">女</string>
+    <string name="login_text_lastlogin">上次登录: </string>
+    <string name="login_text_changeuser">更  换  账  户</string>
+
+    <string name="wifiap_btn_connectwifi">点击连接</string>
+    <string name="wifiap_btn_disconnect">点击断开</string>
+    <string name="wifiap_text_searchap_empty">未搜索到可用热点，可尝试重新搜索</string>
+    <string name="wifiap_text_searchap_searching">正在搜索附近的热点</string>
+    <string name="wifiap_text_createap_fail">热点创建失败，请尝试重新创建</string>
+    <string name="wifiap_dialog_createap_nonsupport">您的设备不支持热点创建</string>
+    <string name="wifiap_text_createap_creating">正在创建热点</string>
+    <string name="wifiap_dialog_createap_closewifi_confirm">创建热点会关闭当前的WiFi，确认继续？</string>
+    <string name="wifiap_dialog_createap_used">系统热点被占用，点确定开启热点以传输文件。</string>
+    <string name="wifiap_dialog_searchap_closeap_confirm">是否关闭当前热点去搜索其他热点？</string>
+    <string name="wifiap_dialog_closeap_confirm">您确定需要关闭热点？</string>
+    <string name="wifiap_text_connectap_succeed">热点创建成功！</string>
+    <string name="wifiap_text_connectap_ssid">\n热点名：</string>
+
+    <string name="setting_text_myprofile">我的资料</string>
+    <string name="setting_text_sysconfig">系统设置</string>
+    <string name="setting_text_sysconfig_sound">声音提醒</string>
+    <string name="setting_text_sysconfig_vibra">震动提醒</string>
+    <string name="setting_btn_cleandb">删除聊天记录</string>
+    <string name="setting_btn_aboutus">关 于 我 们</string>
+    <string name="setting_btn_closeapp">退 出</string>
+
+    <string name="no_file">No files</string>
+    <string name="enable_sd_card">SD card is not available, please connect one</string>
+    <string name="current_path_label">当前路径: </string>
+    <string name="select_file_for_send">选择要发送的文件</string>
+    <string name="select_path_for_save">选择接收文件的文件夹</string>
+    <string name="accept">接收</string>
+    <string name="close">关闭</string>
+
+    <!--步骤Start-->
+    <string name="step_scan_card">确认接挂杆号</string>
+    <string name="step_hang_order">下达接挂命令</string>
+    <string name="step_hang">接挂地线</string>
+    <string name="step_dismantle_order">下达拆除命令</string>
+    <string name="step_dismantle">拆除地线</string>
+
+    <string name="step_affirm_pole">确认杆号</string>
+    <string name="step_set_hang_order">下达接地线命令</string>
+    <string name="step_affirm_hang_lead">确认挂接地线</string>
+    <string name="step_set_dismantle_order">下达拆除地线命令</string>
+    <string name="step_affirm_dismantle">确认拆除</string>
+    <!--步骤End-->
+
+    <string name="txt_ok">确定</string>
+    <string name="txt_cancel">取消</string>
+
+    <!--speech start-->
+    <string name="speech_affirm">审核通过</string>
+    <string name="speech_refuse">拒绝通过</string>
+    <string name="speech_start_discern">开始识别</string>
+    <string name="speech_stop_discern">停止识别</string>
+    <string name="speech_find_groun">杆号已定位</string>
+    <string name="speech_affirm_finger">请确认指纹</string>
+    <string name="speech_finger_right">指纹确认成功</string>
+    <string name="speech_finger_right_set_ground_order">指纹通过,接挂命令已下达</string>
+    <string name="speech_finger_right_set_dismantle_order">指纹通过,拆除命令已下达</string>
+    <string name="speech_receive_ground_lend_order">已收到接挂命令,可开始接挂任务</string>
+    <string name="speech_receive_dismantle_order">已收到拆除命令,可开始拆除任务</string>
+    <string name="speech_need_ground_affirm">有杆号需要确认，请审核</string>
+    <string name="speech_all_ground_scan">所有杆号位置已确认，可请求审核</string>
+    <!--speech end-->
+
+    <string name="listsearching">查找设备中……</string>
+    <string name="listselectdevtoconn">选择要连接的设备</string>
+    <string name="listnotgetdev">没有找到新设备</string>
+    <string name="info_nobt">蓝牙服务不可用！</string>
+    <string name="listbluetoothconn">蓝牙连接</string>
+    <string name="act_btconn">连接</string>
+    <string name="act_btconngood">成功!</string>
+    <string name="act_btconnfail">失败!</string>
+    <string name="info_revfail">接收数据失败！ </string>
+    <string name="listnotmatch">未配对设备</string>
+    <string name="listsearchdev">查找设备</string>
+    <string name="listsearchcancel">取消</string>
+    <string name="info_btconn">请先连接蓝牙设备！</string>
+</resources>

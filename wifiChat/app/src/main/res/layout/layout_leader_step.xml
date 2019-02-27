@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout style="@style/Step_Parent">
+
+        <LinearLayout
+            style="@style/Step_State_Text_Parent">
+
+            <ImageView
+                android:id="@+id/iv_step1_state"
+                style="@style/Step_Img_State"/>
+
+            <TextView
+                android:id="@+id/tv_step1_par"
+                style="@style/Step_Progress_Text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_step1_name"
+            style="@style/Step_Text"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/btn_leader_step_selector"
+            android:text="@string/step_scan_card"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Step_Parent">
+
+        <LinearLayout
+            style="@style/Step_State_Text_Parent">
+
+            <ImageView
+                android:id="@+id/iv_step2_state"
+                style="@style/Step_Img_State"/>
+
+            <TextView
+                android:id="@+id/tv_step2_par"
+                style="@style/Step_Progress_Text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_step2_name"
+            style="@style/Step_Text"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/btn_leader_step_selector"
+            android:text="@string/step_scan_card"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Step_Parent">
+
+        <LinearLayout
+            style="@style/Step_State_Text_Parent">
+
+            <ImageView
+                android:id="@+id/iv_step3_state"
+                style="@style/Step_Img_State"/>
+
+            <TextView
+                android:id="@+id/tv_step3_par"
+                style="@style/Step_Progress_Text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_step3_name"
+            style="@style/Step_Text"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/btn_leader_step_selector"
+            android:text="@string/step_scan_card"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Step_Parent">
+
+        <LinearLayout
+            style="@style/Step_State_Text_Parent">
+
+            <ImageView
+                android:id="@+id/iv_step4_state"
+                style="@style/Step_Img_State"/>
+
+            <TextView
+                android:id="@+id/tv_step4_par"
+                style="@style/Step_Progress_Text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_step4_name"
+            style="@style/Step_Text"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/btn_leader_step_selector"
+            android:text="@string/step_scan_card"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Step_Parent">
+
+        <LinearLayout
+            style="@style/Step_State_Text_Parent">
+
+            <ImageView
+                android:id="@+id/iv_step5_state"
+                style="@style/Step_Img_State"/>
+
+            <TextView
+                android:id="@+id/tv_step5_par"
+                style="@style/Step_Progress_Text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_step5_name"
+            style="@style/Step_Text"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/btn_leader_step_selector"
+            android:text="@string/step_scan_card"/>
+    </LinearLayout>
+</LinearLayout>

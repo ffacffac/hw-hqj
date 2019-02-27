@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_dialog_normal"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height"
+        android:background="@drawable/bg_dialog_normal_title"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_dialog_ooperation_state"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_dialog_ooperation_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="标题"
+            android:textColor="#404040"
+            android:textSize="@dimen/dialog_title_text_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#ffd0d0d0" />
+
+    <TextView
+        android:id="@+id/tv_dialog_ooperation_cntext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:minHeight="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="内容"
+        android:textColor="#404040"
+        android:textSize="@dimen/common_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="#ffd0d0d0" />
+
+    <EditText
+        android:id="@+id/et_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/corner_btn_bg"
+        android:gravity="left|center"
+        android:minHeight="70dp"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_dialog_normal_bottom"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_dialog_ooperation_positive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_btn_bg"
+            android:gravity="center"
+            android:text="@string/txt_ok"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_dialog_ooperation_other"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_btn_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_dialog_ooperation_negative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_btn_cancel_bg"
+            android:gravity="center"
+            android:text="@string/txt_cancel"
+            android:textColor="#3E3E3E"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

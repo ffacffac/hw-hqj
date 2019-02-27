@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="95dp"
+              android:orientation="vertical">
+
+    <LinearLayout style="@style/Step_Parent">
+
+        <LinearLayout
+            style="@style/Step_State_Text_Parent">
+
+            <ImageView
+                android:id="@+id/iv_step_leader_state"
+                style="@style/Step_Img_State"/>
+
+            <TextView
+                android:id="@+id/tv_step_leader_par"
+                style="@style/Step_Progress_Text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_step_leader_name"
+            style="@style/Step_Text"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/btn_leader_step_selector"
+            android:text="@string/step_scan_card"/>
+    </LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/tv_device_group_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#D1F1FE"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_device_name_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_device_selector"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="22sp"/>
+
+        <ImageView
+            android:id="@+id/iv_device_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+    </LinearLayout>-->
+
+
+</LinearLayout>

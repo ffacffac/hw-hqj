@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="szu.wifichat.android.activity.HttpTestActivity">
+
+    <Button
+        android:id="@+id/btn_send_data_asyn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="异步请求数据"/>
+
+    <Button
+        android:id="@+id/btn_send_data_sync"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="同步请求数据"/>
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e1b1a1"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="95dp"
+              android:orientation="vertical">
+
+    <LinearLayout style="@style/Step_Parent">
+
+        <LinearLayout
+            style="@style/Step_State_Text_Parent">
+
+            <ImageView
+                android:id="@+id/iv_step_state"
+                style="@style/Step_Img_State"/>
+
+            <TextView
+                android:id="@+id/tv_step_par"
+                style="@style/Step_Progress_Text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_step_name"
+            style="@style/Step_Text"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/btn_leader_step_selector"
+            android:text="@string/step_scan_card"/>
+    </LinearLayout>
+</LinearLayout>

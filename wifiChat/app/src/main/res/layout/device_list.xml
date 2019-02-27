@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/paired_devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stackFromBottom="true" />
+
+        <TextView
+            android:id="@+id/title_new_devices"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#666"
+            android:padding="5dp"
+            android:text="@string/listnotmatch"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/new_devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stackFromBottom="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:background="#d9d9d9"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_scan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_btn_cancel_bg"
+            android:gravity="center"
+            android:text="@string/listsearchdev"
+            android:textColor="#3E3E3E"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="0.6dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_btn_cancel_bg"
+            android:gravity="center"
+            android:onClick="OnCancel"
+            android:text="@string/listsearchcancel"
+            android:textColor="#3E3E3E"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

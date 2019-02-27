@@ -4,7 +4,11 @@
 bin/
 build/
 .idea/
+*.gradle/
+gradle/
 gen/
 obj/ 
-*.[gitignore]
+*.gitignore
 *.[iml]
+androidpn-client/.settings/
+*.iml
