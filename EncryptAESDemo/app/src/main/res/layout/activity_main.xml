@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hw.encryptaesdemo.MainActivity">
+
+    <Button
+        android:id="@+id/btn_exc_encrypt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ASE加解密"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/tv_encrypt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e2ded7"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:textSize="19sp"/>
+
+</LinearLayout>
