@@ -1,0 +1,72 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.1.51'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+
+    // Sdk and tools
+    compileSdkVersion = 27
+    buildToolsVersion = '27.0.3'
+    minSdkVersion = 15
+    targetSdkVersion = 27
+
+    appcompat_v7 = '27.1.1'
+    junit = '4.12'
+    constraint_layout = "1.1.3"
+    test_runner = '1.0.2'
+    espresso_core = '3.0.2'
+
+    //Rxjava
+    v_rxjava = '2.1.5'
+    v_rxjava_android = '2.0.1'
+
+    //dagger
+    v_dagger = '2.22.1'
+    v_dagger_compiler = '2.22.1'
+
+    //leakcanary-android:1.6.3'
+    leakcanary_android = '1.6.3'
+    leakcanary_android_no_op = '1.6.3'
+    leakcanary_support_fragment = '1.6.3'
+
+    //今日头条屏幕适配框架
+    jrtt_autosize = '1.1.2'
+
+    //butterknife:8.8.1
+    v_butterknife = '8.8.1'
+    v_butterknife_compiler = '8.8.1'
+
+    //xutils
+    v_xutils='3.5.1'
+
+    //BaseRecyclerViewAdapterHelper
+    baseRVAdapterHelper='2.9.46'
+
+    //fragmentationVersion
+    v_fragmentation='1.1.9'
+}

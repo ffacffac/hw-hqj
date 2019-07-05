@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#5ddcea</color>
+    <color name="colorPrimaryDark">#5ddcea</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bg_input_line">#c4c1c1</color>
+
+    <color name="color_btn_login">#eb5ddcea</color>
+</resources>

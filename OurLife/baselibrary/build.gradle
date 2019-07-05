@@ -1,0 +1,75 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+//        applicationId "com.hw.ourlife"
+//        minSdkVersion var.minSdkVersion
+//        targetSdkVersion var.targetSdkVersion
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$rootProject.appcompat_v7"
+    testImplementation "junit:junit:$rootProject.junit"
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.constraint_layout"
+    androidTestImplementation "com.android.support.test:runner:$rootProject.test_runner"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.espresso_core"
+    api "io.reactivex.rxjava2:rxjava:$rootProject.v_rxjava"
+    api "io.reactivex.rxjava2:rxandroid:$rootProject.v_rxjava_android"
+    api "com.google.dagger:dagger:$rootProject.v_dagger"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.v_dagger_compiler"
+
+    //leakcanary start
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$rootProject.leakcanary_android"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$rootProject.leakcanary_android_no_op"
+
+    // Optional, if you use support library fragments:
+    debugImplementation "com.squareup.leakcanary:leakcanary-support-fragment:$rootProject.leakcanary_support_fragment"
+
+    //leakcanary end
+
+    //今日头条屏幕适配方案
+    implementation "me.jessyan:autosize:$rootProject.jrtt_autosize"
+
+    //butterknife
+    api "com.jakewharton:butterknife:$v_butterknife"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$v_butterknife_compiler"
+    api 'com.github.tbruyelle:rxpermissions:0.10.2'
+    api "org.xutils:xutils:$rootProject.v_xutils"
+
+    //SmartRefreshLayout
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1'
+
+    //BaseRecyclerViewAdapterHelper
+
+    //    api "com.github.CymChad:BaseRecyclerViewAdapterHelper:$rootProject.baseRVAdapterHelper"
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
+    api 'com.github.bumptech.glide:glide:4.8.0'
+
+    //fragmentation
+    api "me.yokeyword:fragmentation:$rootProject.v_fragmentation"
+    api "me.yokeyword:fragmentation-swipeback:$rootProject.v_fragmentation"
+}

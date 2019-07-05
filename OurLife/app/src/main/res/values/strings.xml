@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OurLife</string>
+
+    <string name="txt_login">登录</string>
+    <string name="txt_login_hint">请输入密码</string>
+    <string name="txt_say">说点什么吧</string>
+</resources>
