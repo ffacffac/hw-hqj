@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 import com.hw.ourlife.R
 
-class AppActivity : AppCompatActivity() {
+class AppActivity : AppCompatActivity(){
 
     var str = "";
     var v1 = "s";

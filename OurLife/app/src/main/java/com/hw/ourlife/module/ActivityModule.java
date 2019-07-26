@@ -14,10 +14,20 @@ public class ActivityModule {
 
     private Activity activity;
 
+    /**
+     * 将目标类传过来
+     *
+     * @param activity 目标activity
+     */
     public ActivityModule(Activity activity) {
         this.activity = activity;
     }
 
+    /**
+     * 对应ActivityComponent接口的getActivity()
+     *
+     * @return Activity 返回值
+     */
     @Provides
     Activity provideActivity() {
         return activity;

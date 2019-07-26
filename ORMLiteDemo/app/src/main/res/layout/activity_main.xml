@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="mainViewModel"
+            type="com.hw.ormlitedemo.MainViewModel"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.hw.ormlitedemo.MainActivity">
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/EditValue"
+            android:hint="请输入信息姓名"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/et_pwd"
+            style="@style/EditValue"
+            android:hint="请输入密码"
+            app:layout_constraintTop_toBottomOf="@+id/et_name"/>
+
+        <EditText
+            android:id="@+id/et_address"
+            style="@style/EditValue"
+            android:hint="请输入地址"
+            app:layout_constraintTop_toBottomOf="@+id/et_pwd"/>
+
+        <EditText
+            android:id="@+id/et_age"
+            style="@style/EditValue"
+            android:hint="请输入年龄"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/et_address"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onClick"
+            android:text="保存"
+            app:layout_constraintTop_toBottomOf="@+id/et_age"/>
+
+        <Button
+            android:id="@+id/btn_find"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onClick"
+            android:text="查询"
+            app:layout_constraintTop_toBottomOf="@+id/btn_save"/>
+
+        <TextView
+            android:id="@+id/tv_user_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aaccaa"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/btn_find"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
