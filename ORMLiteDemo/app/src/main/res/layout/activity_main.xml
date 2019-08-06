@@ -6,7 +6,7 @@
     <data>
 
         <variable
-            name="mainViewModel"
+            name="model"
             type="com.hw.ormlitedemo.MainViewModel"/>
     </data>
 
@@ -44,21 +44,30 @@
 
         <Button
             android:id="@+id/btn_save"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:onClick="onClick"
+            style="@style/BtnStyle"
             android:text="保存"
             app:layout_constraintTop_toBottomOf="@+id/et_age"/>
 
         <Button
             android:id="@+id/btn_find"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:onClick="onClick"
+            style="@style/BtnStyle"
             android:text="查询"
-            app:layout_constraintTop_toBottomOf="@+id/btn_save"/>
+            app:layout_constraintLeft_toRightOf="@+id/btn_save"
+            app:layout_constraintTop_toBottomOf="@+id/et_age"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="@style/BtnStyle"
+            android:text="删除"
+            app:layout_constraintLeft_toRightOf="@+id/btn_find"
+            app:layout_constraintTop_toBottomOf="@+id/et_age"/>
+
+        <Button
+            android:id="@+id/btn_update"
+            style="@style/BtnStyle"
+            android:text="更新"
+            app:layout_constraintLeft_toRightOf="@+id/btn_find"
+            app:layout_constraintTop_toBottomOf="@+id/et_age"/>
 
         <TextView
             android:id="@+id/tv_user_list"
@@ -67,7 +76,6 @@
             android:background="#aaccaa"
             android:gravity="center_vertical"
             app:layout_constraintTop_toBottomOf="@+id/btn_find"/>
-
 
     </android.support.constraint.ConstraintLayout>
 </layout>

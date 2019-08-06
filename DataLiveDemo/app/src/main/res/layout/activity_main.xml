@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hw.datalivedemo.MainActivity">
+
+    <Button
+        android:id="@+id/btn_to"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="onClick"
+        android:text="跳转"/>
+
+    <TextView
+        android:id="@+id/tv_rev_msg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#100c0e"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="接收到消息：22222"/>
+
+</android.support.constraint.ConstraintLayout>
