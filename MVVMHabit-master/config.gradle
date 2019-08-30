@@ -2,9 +2,9 @@ ext {
     //android开发版本配置
     android = [
             compileSdkVersion: 28,
-            buildToolsVersion: "28.0.0",
+            buildToolsVersion: "28.0.3",
             applicationId    : "com.goldze.mvvmhabit",
-            minSdkVersion    : 15,
+            minSdkVersion    : 16,
             targetSdkVersion : 28,
             versionCode      : 1,
             versionName      : "1.0",
@@ -49,14 +49,14 @@ ext {
             //json解析
             "gson"                                 : "com.google.code.gson:gson:2.8.5",
             //material-dialogs
-            "material-dialogs-core"                : "com.afollestad.material-dialogs:core:0.9.4.5",
-            "material-dialogs-commons"             : "com.afollestad.material-dialogs:commons:0.9.4.5",
+            "material-dialogs-core"                : "com.afollestad.material-dialogs:core:2.6.0",
+            "material-dialogs-commons"             : "com.afollestad.material-dialogs:commons:0.9.6.0",
             //recyclerview的databinding套装
             "bindingcollectionadapter"             : "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:2.2.0",
             "bindingcollectionadapter-recyclerview": "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:2.2.0",
             //Google AAC
             "lifecycle-extensions"                 : "android.arch.lifecycle:extensions:1.1.1",
-            "lifecycle-compiler"                 : "android.arch.lifecycle:compiler:1.1.1",
+            "lifecycle-compiler"                   : "android.arch.lifecycle:compiler:1.1.1",
             //MVVMHabit
             "MVVMHabit"                            : "com.github.goldze:MVVMHabit:3.1.2",
     ]

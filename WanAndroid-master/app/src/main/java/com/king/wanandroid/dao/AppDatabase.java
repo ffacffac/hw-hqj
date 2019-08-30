@@ -11,7 +11,7 @@ import com.king.wanandroid.bean.SearchHistory;
 /**
  * @author Jenly <a href="mailto:jenly1314@gmail.com">Jenly</a>
  */
-@Database(entities = {SearchHistory.class}, version = 1,exportSchema = false)
+@Database(entities = {SearchHistory.class}, version = 1, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
 
     private static final Object M_LOCK = new Object();
@@ -19,9 +19,11 @@ public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase sInstance;
 
     public static AppDatabase getInstance(Context context) {
-        synchronized (M_LOCK){
-            if(sInstance == null){
-                sInstance = Room.databaseBuilder(context.getApplicationContext(),AppDatabase.class, Constants.DATABASE_NAME).build();
+        synchronized (M_LOCK) {
+            if (sInstance == null) {
+                sInstance = Room
+                        .databaseBuilder(context.getApplicationContext(), AppDatabase.class, Constants.DATABASE_NAME)
+                        .build();
             }
             return sInstance;
         }

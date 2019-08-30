@@ -25,9 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.main.DemoActivity"></activity>
-        <activity android:name=".ui.tab_bar.activity.TabBarActivity"></activity>
-        <activity android:name=".ui.viewpager.activity.ViewPagerActivity"></activity>
+        <activity android:name=".ui.main.DemoActivity"/>
+        <activity android:name=".ui.tab_bar.activity.TabBarActivity"/>
+        <activity android:name=".ui.viewpager.activity.ViewPagerActivity"/>
     </application>
 
 </manifest>

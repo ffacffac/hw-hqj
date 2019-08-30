@@ -17,8 +17,6 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.king.app.dialog.AppDialog;
 import com.king.app.dialog.AppDialogConfig;
-import com.king.app.updater.AppUpdater;
-import com.king.app.updater.util.PermissionUtils;
 import com.king.base.adapter.divider.DividerItemDecoration;
 import com.king.base.util.SharedPreferencesUtils;
 import com.king.base.util.StringUtils;
@@ -189,8 +187,8 @@ public class HomeActivity extends MVVMActivity<HomeViewModel, HomeActivityBindin
 
         clickVersion(false);
 
-        PermissionUtils.INSTANCE
-                .verifyReadAndWritePermissions(this, com.king.app.updater.constant.Constants.RE_CODE_STORAGE_PERMISSION);
+        // PermissionUtils.INSTANCE
+        //         .verifyReadAndWritePermissions(this, com.king.app.updater.constant.Constants.RE_CODE_STORAGE_PERMISSION);
     }
 
     /**
@@ -315,6 +313,7 @@ public class HomeActivity extends MVVMActivity<HomeViewModel, HomeActivityBindin
                 return;
             }
             resource.handle(new OnCallback<DataBean<List<ArticleBean>>>() {
+
                 @Override
                 public void onSuccess(DataBean<List<ArticleBean>> data) {
                     refreshListView(data);
@@ -503,11 +502,10 @@ public class HomeActivity extends MVVMActivity<HomeViewModel, HomeActivityBindin
             AppDialogConfig config = new AppDialogConfig();
             config.setTitle(getString(R.string.update_version_title)).setContent(content)
                   .setOk(getString(R.string.update_version_ok)).setOnClickOk(v -> {
-                new AppUpdater(getContext(), data.getUrl()).start();
-                AppDialog.INSTANCE.dismissDialog();
+                // new AppUpdater(getContext(), data.getUrl()).start();
+                // AppDialog.INSTANCE.dismissDialog();
             });
             AppDialog.INSTANCE.showDialog(getContext(), config);
-
         }
     }
 
@@ -595,7 +593,6 @@ public class HomeActivity extends MVVMActivity<HomeViewModel, HomeActivityBindin
                 break;
             default:
                 break;
-
         }
     }
 }

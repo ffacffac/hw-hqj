@@ -2,7 +2,6 @@ package com.king.wanandroid.di.module;
 
 import android.content.Context;
 
-import com.franmontiel.persistentcookiejar.ClearableCookieJar;
 import com.franmontiel.persistentcookiejar.PersistentCookieJar;
 import com.franmontiel.persistentcookiejar.cache.SetCookieCache;
 import com.franmontiel.persistentcookiejar.persistence.SharedPrefsCookiePersistor;
@@ -15,7 +14,6 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import okhttp3.CookieJar;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -72,7 +70,4 @@ public class HttpModule {
         return retrofit.create(ApiService.class);
 
     }
-
-
-
 }
