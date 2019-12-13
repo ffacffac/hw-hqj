@@ -1,0 +1,4 @@
+storePassword=ffac-1234
+keyPassword=ffac-1234
+keyAlias=sign
+storeFile=key/sign.jks

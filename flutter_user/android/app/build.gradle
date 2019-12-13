@@ -41,13 +41,35 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
-    buildTypes {
+    signingConfigs {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig signingConfigs.debug
+            keyAlias 'sign'
+            keyPassword 'ffac-1234'
+            storeFile file('key/sign.jks')
+            storePassword 'ffac-1234'
         }
     }
+
+    buildTypes {
+        release {
+            // TODO: Add youg config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+//            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
+            applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = getDate() + "_flutter_demo.apk"
+                }
+            }
+        }
+    }
+}
+
+// 获取格式化时间，用来标识打包时间，同时避免命名冲突
+static def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyy-MM-dd_HHmm')
+    return formattedDate
 }
 
 flutter {

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+import 'Dart1210.dart';
+
+
 void main() => runApp(LoginPage());
 
 class LoginPage extends StatefulWidget {
@@ -29,17 +32,26 @@ class _LoginPageState extends State<LoginPage> {
       loginForm.save();
       print('userName：$userName,password：$password');
       Fluttertoast.showToast(msg: '登录成功');
+      Navigator.push(
+          context, new MaterialPageRoute(builder: (context) => new MyApp()));
     }
+  }
+
+  final String title = 'Form表单案例';
+
+  AppBar myAppBar() {
+    return new AppBar(
+      title: Text(title),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Form表单案例',
+      title: this.title,
+      color: Colors.green,
       home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text('Form表单案例'),
-        ),
+        appBar: myAppBar(),
         body: new Column(
           children: <Widget>[
             new Container(

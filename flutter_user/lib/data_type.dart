@@ -17,7 +17,9 @@ void main() {
 
   ///Map
   var map = {'name': "zhangsan", 'age': 20, "stu": true};
+  var map2 = <String, Object>{'name': "zhangsan", 'age': 20, "stu": true};
   var map1 = new Map();
+  var map3 = new Map<String, Object>();
 
 //  map.forEach(mapFun); //遍历
 
@@ -52,11 +54,12 @@ void main() {
   clo(); //clo 会持有colosa方法里面局部变量的状态
   clo(); //输出 2
   clo(); //输出 3
+
 }
 
 String funsVar(int a, String times(String t, int iol)) {
-  print('a==$a，-------funsVar===${times("abcdefggg-", 55)}');
-  return times("abcdefggg-", 156);
+  print('a==$a，-------funsVar===${times("abcdefggg-0", 55)}');
+  return times("abcdefggg-1", 156);
 }
 
 mapFun(key, value) {
