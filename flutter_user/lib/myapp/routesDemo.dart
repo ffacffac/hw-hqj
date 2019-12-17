@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_user/myapp/secendpage.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 ///路由、跳转
-void main() => runApp(new RoutesDemo());
+//void main() => runApp(new RoutesDemo());
 
 class RoutesDemo extends StatelessWidget {
   @override
@@ -12,7 +13,8 @@ class RoutesDemo extends StatelessWidget {
       title: '路由跳转实例',
       //自定义主题，颜色
       theme: new ThemeData(primaryColor: Colors.green),
-      home: new MyHomePage(),
+//      home: new MyHomePage(),
+      home: new FirstPage(),
       //初始化路由跳转配置
       routes: {
         '/first': (context) => FirstPage(),
@@ -58,12 +60,13 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               TabBarView(
                   children: myTabs.map((Tab tab) {
-                    return Center(child: Text(tab.text));
+                    return Center(
+                        child: Container(
+                            child: Text(tab.text,
+                                style: TextStyle(color: Colors.blueAccent))
+                        ));
                   }).toList()
               ),
-//              RaisedButton(onPressed: () {
-//                Navigator.pushNamed(context, '/first');
-//              }, child: Text('跳转到frist页面', style: TextStyle(fontSize: 28.0))),
             ],
           )
       ),
@@ -110,26 +113,18 @@ class FirstPage extends StatelessWidget {
       body: Center(
         //onPressed 传参为匿名参数
         child: RaisedButton(onPressed: () {
-          Navigator.pushNamed(context, '/second');
+//          Navigator.pushNamed(context, '/second');
+          //第二种方式
+          _toSecondPage(context);
         }, child: Text('这是第一页（first）', style: TextStyle(fontSize: 28.0))),
       ),
     );
   }
-}
 
-class SecondPage extends StatelessWidget {
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: new AppBar(title: Text('Second Page')),
-      body: new Center(
-        child: RaisedButton(onPressed: () {
-          //跳转到第一个节目
-          Navigator.pushNamed(context, '/first');
-        },
-            child: Text('这是第二个界面', style: TextStyle(fontSize: 28.0))),
-      ),
-    );
+  _toSecondPage(BuildContext context) async {
+    final result = Navigator.push(
+        context, MaterialPageRoute(builder: (context) => SecondPage()));
+    print("_toSecondPage--------$result");
+    Scaffold.of(context).showSnackBar(SnackBar(content: Text('$result')));
   }
 }
