@@ -63,7 +63,7 @@ class C {
 ///条件：
 ///1.继承的类不能有显式的构造函数
 ///2.A、B、C类只能继承于Object，不能继承其他类
-///3.
+///3.{see：https://juejin.im/post/5c44382d51882523f0261bb5}
 class D extends A with B, C {
   int d;
 }

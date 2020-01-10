@@ -109,22 +109,38 @@ class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text('first页面')),
+      appBar: new AppBar(
+        title: new Text('first页面'),
+        centerTitle: true, //文字居中
+        actions: <Widget>[
+          Icon(Icons.search),
+          Icon(Icons.add),
+        ],
+      ),
       body: Center(
         //onPressed 传参为匿名参数
-        child: RaisedButton(onPressed: () {
+        child: RaisedButton(
+            color: Colors.green,
+            highlightColor: Color.fromARGB(0, 7, 139, 17),
+//            highlightColor: Colors.red,
+            colorBrightness: Brightness.light,
+            onPressed: () {
 //          Navigator.pushNamed(context, '/second');
-          //第二种方式
-          _toSecondPage(context);
-        }, child: Text('这是第一页（first）', style: TextStyle(fontSize: 28.0))),
+              //第二种方式
+              _toSecondPage(context);
+            },
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8.0)),
+            child: Text('这是第一页（first）',
+                style: TextStyle(color: Colors.white, fontSize: 28.0))),
       ),
     );
   }
 
   _toSecondPage(BuildContext context) async {
-    final result = Navigator.push(
+    final result = await Navigator.push(
         context, MaterialPageRoute(builder: (context) => SecondPage()));
     print("_toSecondPage--------$result");
-    Scaffold.of(context).showSnackBar(SnackBar(content: Text('$result')));
+    Fluttertoast.showToast(msg: '$result');
   }
 }

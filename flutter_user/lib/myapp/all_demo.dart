@@ -1,12 +1,18 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_user/myapp/GestureDetectorDemo.dart';
+import 'package:flutter_user/myapp/exlist.dart';
+import 'package:flutter_user/myapp/http_demo.dart';
+import 'package:flutter_user/myapp/loading1.dart';
+import 'package:flutter_user/myapp/photo_demo.dart';
 import 'package:flutter_user/myapp/routesDemo.dart';
 import 'package:flutter_user/myapp/tab_Drawer_Demo.dart';
 import 'package:flutter_user/myapp/view_demo.dart';
 import 'package:flutter_user/myapp/wudang_travel.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+import 'anim/AnimDemo.dart';
+import 'charts_demo.dart';
 import 'cupertinoActivitylndicator.dart';
 import 'cupertinoAlertDialog.dart';
 import 'cupertinoNavigationBar.dart';
@@ -27,6 +33,12 @@ final List<String> list = [
   "WuDangView整体案例",
   "GestureDetectorDemo",
   "RoutesTab",
+  "HttpDemo",
+  "LoadingDialog",
+  "动画",
+  "ChartsDemo图表",
+  "ExpandableList",
+  "PhotoDemo拍照",
   "Dialog",
   "Form"
 ];
@@ -53,6 +65,12 @@ class AllDemo extends StatelessWidget {
         list[9]: (context) => WuDangMain(),
         list[10]: (context) => GestureDetectorDemo(),
         list[11]: (context) => RoutesDemo(),
+        list[12]: (context) => HttpDemo(),
+//        list[13]: (context) => LoadingDialog(),
+        list[14]: (context) => AnimDemo(),
+        list[15]: (context) => ChartsDemo(),
+        list[16]: (context) => ExpandableList(),
+        list[17]: (context) => PhotoDemo(),
       },
       home: Scaffold(
         appBar: AppBar(title: Text('案例展示')),
@@ -80,7 +98,12 @@ class AllDemo extends StatelessWidget {
   }
 
   void startChildDemo(BuildContext context, int index) {
-    Fluttertoast.showToast(msg: list[index]);
-    Navigator.pushNamed(context, list[index]);
+    if (list[index] == "LoadingDialog") {
+      Navigator.push(
+          context, LoadingDialogRouter(LoadingDialog()));
+    } else {
+      Fluttertoast.showToast(msg: list[index]);
+      Navigator.pushNamed(context, list[index]);
+    }
   }
 }

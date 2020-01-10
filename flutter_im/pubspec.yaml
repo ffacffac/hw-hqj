@@ -1,4 +1,4 @@
-name: flutter_user
+name: flutter_im
 description: A new Flutter application.
 
 # The following defines the version and build number for your application.
@@ -23,21 +23,13 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  fluttertoast: ^3.1.0
-  flutter_swiper: ^1.1.6
-  charts_flutter: ^0.6.0
-#  adv_image_picker: ^1.0.6
-#  custom_multi_image_picker: ^2.1.24
-  image_picker: ^0.6.2
-  # 网络请求 https://pub.flutter-io.cn/packages/dio
-  # json解析 使用flutterjsonbeanFactory插件动态生成model https://www.jianshu.com/p/14cbcbaa74b7
-  dio: ^3.0.2
-  multi_image_picker: ^4.5.5
-  photo_album_manager: ^1.0.5
+  flutter_webview_plugin: ^0.3.10
+  date_format: ^1.0.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -49,7 +41,7 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-  #配置使用资源文件
+
   assets:
   - assets/images/
 
@@ -83,4 +75,3 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
-
